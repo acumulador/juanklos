@@ -1,3 +1,28 @@
+/*animaciones*/
+@-webkit-keyframes animaSocial
+{
+	from
+	{
+		top: 20%;
+	}
+	to
+	{
+		top: 12%;
+	}
+}
+
+/*@-webkit-keyframes animaMenuSocial
+{
+	from
+	{
+		margin-left: -60px;
+	}
+	to
+	{
+		margin-left: 0px;
+	}
+}*/
+
 body
 {
 	background-color: gray;
@@ -32,6 +57,12 @@ p
 	text-shadow: 0px 0px 10px rgba(250, 250, 250, 0.7);
 }
 
+section
+{
+	width: 90%;
+	margin: auto;
+}
+
 #foto
 {
 	/*background: url(../img/juancsalazar.jpg);*/
@@ -54,7 +85,7 @@ p
 	padding: 5px;
 	border: 2px solid rgba(150, 150, 150, 0.8);
 	margin-top: 10px;
-	box-shadow: 0px 0px 6px white;
+	box-shadow: 0px 0px 6px white inset;
 	text-shadow: 0px 0px 10px black;
 	font-family: 'Shadows Into Light', cursive;
 }
@@ -70,6 +101,19 @@ p
 	top: 20%;
 	left: 0;
 	position: fixed;
+
+	/*animacion*/
+	animation-name:animaSocial;
+	animation-duration: 1s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	animation-timing-function: ease-out;
+
+	-webkit-animation-name:animaSocial;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-timing-function: ease-out;
 }
 
 #social
@@ -77,15 +121,23 @@ p
 	width: 55px;
 	height: 210px;
 	background-color: black;
+	/*border: solid;*/
 	border-radius: 0px 15px 15px 0px;
 	padding: 5px;
 	top: 30%;
-	left: 0;
+	left: -60px;
 	z-index: 1000;
 	position: fixed;
 	margin: 0;
 	/*display: block;*/
-	/*margin-left: -40px;*/
+	/*margin-left: -60px;*/
+
+	/*-webkit-animation-name:animaMenuSocial;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-timing-function: ease-out;*/
+
 }
 
 #twitter, #facebook, #blog, #mail
@@ -99,4 +151,7 @@ p
 	background: url(../img/twitter.png);
 	height: 40px;
 	background-size: 100% 100%;
+	border-radius: 25px;
+	/*background-color: red;*/
+	/*border: solid;*/
 }
