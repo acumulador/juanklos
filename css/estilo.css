@@ -1,0 +1,48 @@
+body
+{
+	background-color: gray;
+}
+
+footer
+{
+	font-size: 0.7em;
+	text-align: center;
+	width: 100%;
+	height: 15%;
+	left: 0;
+	background-color: rgba(180, 180, 180, 0.6);
+	bottom: 0;
+	position: fixed;
+}
+
+nav
+{
+	text-align: center;
+	margin-top: 25px;
+}
+
+p
+{
+	text-align: center;
+}
+
+#foto
+{
+	background: url(../img/juancsalazar.jpg);
+	background-size: 100% 100%;
+	width: 10%;
+	height: 250px;
+	margin: auto;
+}
+
+#perfil, #inf_personal, #academico, #dello_personal, #contacto
+{
+	width: 200px;
+	background-color: rgba(150, 150, 150, 0.6);
+	border-radius: 50px;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px;
+	border: 2px solid rgba(150, 150, 150, 0.8);
+	margin-top: 5px;
+}
