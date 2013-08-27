@@ -11,14 +11,22 @@ function openMenu()
 	{
 		$("#social").animate({
 			left: 0
-		},1500, 'easeOutElastic');
+		});
+
+		$("#sel-menu").animate({
+			left: 60
+		});
 		swM = 1;
 	}
 	else
 	{
 		$("#social").animate({
 			left: -60
-		},1500, 'easeInElastic');
+		});
+
+		$("#sel-menu").animate({
+			left: 5
+		});
 		swM = 0;
 	}
 }
